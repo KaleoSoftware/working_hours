@@ -1,5 +1,8 @@
 # WorkingHours
 
+## Changed syntax to be compatible with jruby 1.9 mode
+
+
 [![Build Status](https://travis-ci.org/Intrepidd/working_hours.svg?branch=master)](https://travis-ci.org/Intrepidd/working_hours)
 
 A modern ruby gem allowing to do time calculation with working hours.

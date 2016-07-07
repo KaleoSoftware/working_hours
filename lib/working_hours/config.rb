@@ -72,7 +72,11 @@ module WorkingHours
         Thread.current[:working_hours] = default_config
       end
 
-      def with_config(working_hours: nil, holidays: nil, time_zone: nil)
+      def with_config(opts={})
+        working_hours = opts[:working_hours]
+        holidays = opts[:holidays]
+        time_zone = opts[:time_zone]
+        
         original_working_hours = self.working_hours
         original_holidays = self.holidays
         original_time_zone = self.time_zone
